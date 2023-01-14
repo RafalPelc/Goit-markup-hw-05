@@ -24,13 +24,15 @@
         <nav class="navig">
           <ul class="nav-manu">
             <li>
-              <a class="nav-link" href="#Agencja">Agencja</a>
+              <a class="nav-link agencja" href="./index.html">Agencja</a>
             </li>
             <li>
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link portfolio" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li>
-              <a class="nav-link" href="#Kontakt">Kontakt</a>
+              <a class="nav-link kontakt" href="#Kontakt">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -58,7 +60,9 @@
       <section class="section1">
         <div class="container">
           <h1 class="title">EFEKTYWNE ROZWIĄZANIE DLA WASZEGO BIZNESU</h1>
-          <button class="order-button" type="button">Zamów usługę</button>
+          <button class="order-button" type="button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
       <section class="section">
@@ -117,18 +121,27 @@
               height="294"
               alt="Projektowanie układu strony"
             />
+            <div class="discription-img">
+              <p class="discription-img-child">APLIKACJE KOMPUTEROWE</p>
+            </div>
             <img
               src="./Images/box2.jpg"
               width="370"
               height="294"
               alt="Projektowanie strony tak aby była czytelna w telefonie"
             />
+            <div class="discription-img">
+              <p class="discription-img-child">APLIKACJE MOBILNE</p>
+            </div>
             <img
               src="./Images/box3.jpg"
               width="370"
               height="294"
               alt="Projektowanie graficzne wszystkich widoków strony"
             />
+            <div class="discription-img">
+              <p class="discription-img-child">ROZWIĄZANIA GRAFICZNE</p>
+            </div>
           </div>
         </div>
       </section>
@@ -401,5 +414,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="buttton" class="close-btn" data-modal-close>
+          <svg class="close-black">
+            <use href="./Images/icons2.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
